@@ -22,10 +22,10 @@ export default function Available() {
   return (
     <div>
       {/* Hero */}
-      <div className="bg-brand-dark-medium text-white py-10 px-6">
+      <div className="py-10 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-3xl font-bold mb-3">Available Storage Units</h1>
-          <p className="text-stone-400">
+          <h1 className="text-3xl font-bold mb-3 text-brand-primary">Available Storage Units</h1>
+          <p className="text-stone-500">
             We have many sizes to fit your storage needs
           </p>
         </div>

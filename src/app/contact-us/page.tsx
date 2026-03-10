@@ -11,10 +11,10 @@ export default function ContactUs() {
   return (
     <div>
       {/* Hero */}
-      <div className="bg-brand-dark-medium text-white py-10 px-6">
+      <div className="py-10 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-3xl font-bold mb-3">Contact Us</h1>
-          <p className="text-stone-400">
+          <h1 className="text-3xl font-bold mb-3 text-brand-primary">Contact Us</h1>
+          <p className="text-stone-500">
             For any questions please feel free to call or email!
           </p>
         </div>

@@ -6,7 +6,7 @@ import Image from "next/image";
 const slides = [
   {
     id: 1,
-    src: "/images/message-ss-2_edited-1.jpg",
+    src: "/images/message-ss-2_edited-1-940x350.jpg",
     alt: "Storage Stable - We want to make things as easy as we can for you. If you are moving in, use one of our trucks. Come check us out!",
   },
   {
@@ -35,8 +35,7 @@ export default function HeroSlider() {
           key={slide.id}
           className={`absolute inset-0 transition-opacity duration-1000 ${
             index === current ? "opacity-100" : "opacity-0"
-          }`}
-        >
+          }`}>
           <Image
             src={slide.src}
             alt={slide.alt}

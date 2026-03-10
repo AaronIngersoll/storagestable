@@ -29,13 +29,13 @@ function NavContent({ onLinkClick }: { onLinkClick?: () => void }) {
   return (
     <div className="flex flex-col h-full">
       {/* Logo */}
-      <div className="p-6 pb-4">
+      <div className=" pb-4">
         <Link href="/" onClick={onLinkClick}>
           <Image
-            src="/images/Storage-Stable-Logo-1.png"
+            src="/images/logo.png"
             alt="Storage Stable"
-            width={300}
-            height={249}
+            width={400}
+            height={300}
             className="w-full h-auto"
             priority
           />
@@ -115,7 +115,7 @@ export default function Sidebar() {
         <div className="flex items-center justify-between px-4 py-3">
           <Link href="/" className="flex items-center gap-3">
             <Image
-              src="/images/Storage-Stable-Logo-1.png"
+              src="/images/logo.png"
               alt="Storage Stable"
               width={150}
               height={59}

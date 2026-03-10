@@ -2,8 +2,9 @@ import { Separator } from "@/components/ui/separator";
 
 export default function Footer() {
   return (
-    <footer className="bg-brand-dark-medium text-stone-300">
-      <div className="max-w-5xl mx-auto px-6 py-12">
+    <footer className="relative text-stone-300 bg-cover bg-center" style={{ backgroundImage: "url('/images/wood_texture3850.jpg')" }}>
+      <div className="absolute inset-0 bg-brand-dark/85" />
+      <div className="relative max-w-5xl mx-auto px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Info */}
           <div>
@@ -15,14 +16,12 @@ export default function Footer() {
               <p>Evanston, WY 82930-9244</p>
               <a
                 href="tel:307-789-5818"
-                className="block mt-3 text-white font-semibold hover:text-brand-accent transition-colors"
-              >
+                className="block mt-3 text-white font-semibold hover:text-brand-accent transition-colors">
                 (307) 789-5818
               </a>
               <a
                 href="mailto:storagestable@gmail.com"
-                className="block text-stone-400 hover:text-brand-accent transition-colors"
-              >
+                className="block text-stone-400 hover:text-brand-accent transition-colors">
                 storagestable@gmail.com
               </a>
             </div>
@@ -65,10 +64,11 @@ export default function Footer() {
         </div>
       </div>
 
-      <Separator className="bg-stone-800" />
+      <Separator className="relative bg-stone-800" />
 
-      <div className="text-center py-4 px-6 text-xs text-stone-500">
-        Copyright {new Date().getFullYear()} Storage Stable | All Rights Reserved
+      <div className="relative text-center py-4 px-6 text-xs text-stone-500">
+        Copyright {new Date().getFullYear()} Storage Stable | All Rights
+        Reserved
       </div>
     </footer>
   );
