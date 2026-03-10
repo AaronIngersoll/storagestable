@@ -6,14 +6,7 @@ import HeroSlider from "@/components/HeroSlider";
 export default function Home() {
   return (
     <div>
-      <div className="relative">
-        <HeroSlider />
-        <div className="absolute top-4 right-4 z-10">
-          <Button render={<Link href="/available" />} className="bg-brand-accent hover:bg-brand-accent-light text-white shadow-lg">
-            View Available Units
-          </Button>
-        </div>
-      </div>
+      <HeroSlider />
 
       {/* Feature Cards */}
       <div className="max-w-5xl mx-auto px-6 py-12">
@@ -69,6 +62,12 @@ export default function Home() {
               </Button>
             </CardContent>
           </Card>
+        </div>
+
+        <div className="mt-8 text-center">
+          <Button render={<Link href="/available" />} size="lg" className="bg-brand-accent hover:bg-brand-accent-light text-white shadow-md">
+            View Available Units
+          </Button>
         </div>
       </div>
 
