@@ -89,7 +89,7 @@ export default function Home() {
               <Button render={<a href="tel:307-789-5818" />} className="bg-brand-accent hover:bg-brand-accent-light text-white">
                 Call (307) 789-5818
               </Button>
-              <Button render={<Link href="/contact-us" />} variant="outline" className="border-stone-500 text-white hover:bg-white/10">
+              <Button render={<Link href="/contact-us" />} className="border border-stone-400 bg-transparent text-white hover:bg-white/10">
                 Get Directions
               </Button>
             </div>
