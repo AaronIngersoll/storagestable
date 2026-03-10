@@ -1,60 +1,73 @@
+import { Separator } from "@/components/ui/separator";
+
 export default function Footer() {
   return (
-    <footer>
-      {/* Info Section with real wood texture */}
-      <div
-        className="bg-cover bg-center text-white py-10 px-4"
-        style={{ backgroundImage: "url('/images/wood-telephone-pole-post-grunge-2-720x400.jpg')" }}
-      >
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+    <footer className="bg-brand-dark text-stone-300">
+      <div className="max-w-5xl mx-auto px-6 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Info */}
           <div>
-            <h3 className="text-lg font-bold uppercase mb-4 drop-shadow-md">Info</h3>
-            <p className="text-sm leading-relaxed drop-shadow-sm">
-              <strong>Location:</strong><br />
-              51 Arrowhead Drive<br />
-              Evanston, WY 82930-9244<br /><br />
-              <strong>Phone:</strong><br />
-              <a href="tel:307-789-5818" className="hover:text-amber-300">307-789-5818</a><br /><br />
-              <strong>E-mail:</strong><br />
-              <a href="mailto:storagestable@gmail.com" className="hover:text-amber-300">
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-brand-accent mb-4">
+              Location
+            </h3>
+            <div className="text-sm space-y-2">
+              <p>51 Arrowhead Drive</p>
+              <p>Evanston, WY 82930-9244</p>
+              <a
+                href="tel:307-789-5818"
+                className="block mt-3 text-white font-semibold hover:text-brand-accent transition-colors"
+              >
+                (307) 789-5818
+              </a>
+              <a
+                href="mailto:storagestable@gmail.com"
+                className="block text-stone-400 hover:text-brand-accent transition-colors"
+              >
                 storagestable@gmail.com
               </a>
-            </p>
+            </div>
           </div>
 
           {/* Office Hours */}
           <div>
-            <h3 className="text-lg font-bold uppercase mb-4 drop-shadow-md">Office Hours</h3>
-            <div className="text-sm leading-relaxed space-y-1 drop-shadow-sm">
-              <p><strong>Sunday:</strong> Closed</p>
-              <p><strong>Monday:</strong> 09:00 AM - 06:00 PM</p>
-              <p><strong>Tuesday:</strong> 09:00 AM - 06:00 PM</p>
-              <p><strong>Wednesday:</strong> 09:00 AM - 06:00 PM</p>
-              <p><strong>Thursday:</strong> 09:00 AM - 06:00 PM</p>
-              <p><strong>Friday:</strong> 09:00 AM - 06:00 PM</p>
-              <p><strong>Saturday:</strong> 09:00 AM - 01:00 PM</p>
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-brand-accent mb-4">
+              Office Hours
+            </h3>
+            <div className="text-sm space-y-1.5">
+              <div className="flex justify-between">
+                <span>Monday – Friday</span>
+                <span className="text-stone-400">9:00 AM – 6:00 PM</span>
+              </div>
+              <div className="flex justify-between">
+                <span>Saturday</span>
+                <span className="text-stone-400">9:00 AM – 1:00 PM</span>
+              </div>
+              <div className="flex justify-between">
+                <span>Sunday</span>
+                <span className="text-stone-400">Closed</span>
+              </div>
             </div>
           </div>
 
           {/* Gate Hours */}
           <div>
-            <h3 className="text-lg font-bold uppercase mb-4 drop-shadow-md">Gate Hours</h3>
-            <div className="text-sm leading-relaxed space-y-1 drop-shadow-sm">
-              <p><strong>Sunday:</strong> 07:00 AM - 09:00 PM</p>
-              <p><strong>Monday:</strong> 07:00 AM - 09:00 PM</p>
-              <p><strong>Tuesday:</strong> 07:00 AM - 09:00 PM</p>
-              <p><strong>Wednesday:</strong> 07:00 AM - 09:00 PM</p>
-              <p><strong>Thursday:</strong> 07:00 AM - 09:00 PM</p>
-              <p><strong>Friday:</strong> 07:00 AM - 09:00 PM</p>
-              <p><strong>Saturday:</strong> 07:00 AM - 09:00 PM</p>
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-brand-accent mb-4">
+              Gate Hours
+            </h3>
+            <div className="text-sm space-y-1.5">
+              <div className="flex justify-between">
+                <span>Every Day</span>
+                <span className="text-stone-400">7:00 AM – 9:00 PM</span>
+              </div>
+              <p className="text-stone-500 text-xs mt-2">365 days a year</p>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Copyright */}
-      <div className="bg-neutral-900 text-gray-400 text-center py-3 px-4 text-xs">
+      <Separator className="bg-stone-800" />
+
+      <div className="text-center py-4 px-6 text-xs text-stone-500">
         Copyright {new Date().getFullYear()} Storage Stable | All Rights Reserved
       </div>
     </footer>
