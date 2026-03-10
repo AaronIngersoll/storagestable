@@ -11,7 +11,7 @@ export default function MovingFaqs() {
   return (
     <div>
       {/* Hero */}
-      <div className="bg-brand-dark text-white py-10 px-6">
+      <div className="bg-brand-dark-medium text-white py-10 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-3xl font-bold mb-3">Moving FAQ&apos;s</h1>
           <p className="text-stone-400">

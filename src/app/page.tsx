@@ -6,20 +6,12 @@ import HeroSlider from "@/components/HeroSlider";
 export default function Home() {
   return (
     <div>
-      <HeroSlider />
-
-      {/* Quick Info Section */}
-      <div className="bg-brand-dark text-white py-4 px-6">
-        <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 text-sm">
-          <span>51 Arrowhead Drive, Evanston, WY 82930</span>
-          <div className="flex items-center gap-4">
-            <a href="tel:307-789-5818" className="text-brand-accent font-semibold hover:text-brand-accent-light">
-              (307) 789-5818
-            </a>
-            <Button render={<Link href="/available" />} size="sm" className="bg-brand-accent hover:bg-brand-accent-light text-white">
-              View Units
-            </Button>
-          </div>
+      <div className="relative">
+        <HeroSlider />
+        <div className="absolute top-4 right-4 z-10">
+          <Button render={<Link href="/available" />} className="bg-brand-accent hover:bg-brand-accent-light text-white shadow-lg">
+            View Available Units
+          </Button>
         </div>
       </div>
 

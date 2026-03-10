@@ -2,7 +2,7 @@ import { Separator } from "@/components/ui/separator";
 
 export default function Footer() {
   return (
-    <footer className="bg-brand-dark text-stone-300">
+    <footer className="bg-brand-dark-medium text-stone-300">
       <div className="max-w-5xl mx-auto px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Info */}
