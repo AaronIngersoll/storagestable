@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-wood-dark: #3a2e1e;
+  --color-wood-medium: #5c4a32;
+  --color-wood-light: #8b7355;
+  --color-stable-red: #8b1a1a;
+  --color-stable-gray: #999999;
+  --color-stable-dark: #1a1a1a;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Wood grain background pattern */
+.wood-bg {
+  background-color: #6b5b45;
+  background-image:
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 2px,
+      rgba(0, 0, 0, 0.03) 2px,
+      rgba(0, 0, 0, 0.03) 4px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 20px,
+      rgba(0, 0, 0, 0.05) 20px,
+      rgba(0, 0, 0, 0.05) 21px
+    ),
+    linear-gradient(
+      90deg,
+      #7a6b55 0%,
+      #6b5b45 15%,
+      #8a7a64 30%,
+      #6b5b45 45%,
+      #7a6b55 60%,
+      #5c4c36 75%,
+      #7a6b55 100%
+    );
+}
