@@ -140,28 +140,14 @@ export default function Sidebar() {
             <Sheet open={open} onOpenChange={setOpen}>
               <SheetTrigger
                 render={
-                  <Button
-                    variant="ghost"
-                    size="icon"
-                    className="text-white hover:bg-stone-800"
-                  />
+                  <button className="text-white text-sm font-medium underline underline-offset-4 hover:text-brand-accent transition-colors" />
                 }>
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24">
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
+                Menu
               </SheetTrigger>
               <SheetContent
                 side="left"
-                className="w-[280px] p-0 bg-brand-dark-medium border-stone-700 overflow-y-auto">
+                className="w-[280px] p-0 bg-brand-dark-medium border-stone-700 overflow-y-auto"
+                closeClassName="text-brand-accent hover:text-brand-accent-light">
                 <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
                 <NavContent onLinkClick={() => setOpen(false)} />
               </SheetContent>
