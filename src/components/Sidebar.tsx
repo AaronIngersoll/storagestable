@@ -27,9 +27,9 @@ function NavContent({ onLinkClick }: { onLinkClick?: () => void }) {
   const pathname = usePathname();
   
   return (
-    <div className="flex flex-col h-full">
+    <div className="flex flex-col min-h-full">
       {/* Logo */}
-      <div className="pb-4">
+      <div className="pb-2 lg:pb-4">
         <Link href="/" onClick={onLinkClick} className="relative block">
           <Image
             src="/images/wood-telephone-pole-post-grunge-2-320x202.jpg"
@@ -51,12 +51,12 @@ function NavContent({ onLinkClick }: { onLinkClick?: () => void }) {
       </div>
 
       {/* Contact Info */}
-      <div className="px-6 pb-4 text-sm text-stone-400 space-y-1">
+      <div className="px-4 pb-2 lg:px-6 lg:pb-4 text-xs lg:text-sm text-stone-400 space-y-0.5 lg:space-y-1">
         <p>51 Arrowhead Drive</p>
         <p>Evanston, WY 82930</p>
         <a
           href="tel:307-789-5818"
-          className="text-brand-accent hover:text-brand-accent-light font-semibold block mt-1">
+          className="text-brand-accent hover:text-brand-accent-light font-semibold block mt-0.5 lg:mt-1">
           (307) 789-5818
         </a>
       </div>
@@ -64,14 +64,14 @@ function NavContent({ onLinkClick }: { onLinkClick?: () => void }) {
       <Separator className="bg-stone-700" />
 
       {/* Nav Links */}
-      <nav className="flex-1 py-4">
-        <ul className="space-y-1">
+      <nav className="flex-1 py-2 lg:py-4">
+        <ul className="space-y-0">
           {navLinks.map((link) => (
             <li key={link.href}>
               <Link
                 href={link.href}
                 onClick={onLinkClick}
-                className={`block px-6 py-2.5 text-sm font-medium transition-colors ${
+                className={`block px-4 py-1.5 lg:px-6 lg:py-2.5 text-xs lg:text-sm font-medium transition-colors ${
                   pathname === link.href
                     ? "text-brand-accent bg-stone-800"
                     : "text-stone-300 hover:text-white hover:bg-stone-800"
@@ -86,7 +86,7 @@ function NavContent({ onLinkClick }: { onLinkClick?: () => void }) {
       <Separator className="bg-stone-700" />
 
       {/* Pay Online CTA */}
-      <div className="p-6">
+      <div className="p-3 lg:p-6">
         <Button
           render={
             <a
@@ -95,18 +95,18 @@ function NavContent({ onLinkClick }: { onLinkClick?: () => void }) {
               rel="nofollow noopener noreferrer"
             />
           }
-          className="w-full bg-brand-accent hover:bg-brand-accent-light text-white font-semibold">
+          className="w-full bg-brand-accent hover:bg-brand-accent-light text-white font-semibold text-xs lg:text-sm">
           Pay Online
         </Button>
       </div>
 
       {/* Hours */}
-      <div className="px-6 pb-6 text-xs text-stone-500">
-        <p className="font-semibold text-stone-400 mb-1">Office Hours</p>
+      <div className="px-4 pb-4 lg:px-6 lg:pb-6 text-[11px] lg:text-xs text-stone-500">
+        <p className="font-semibold text-stone-400 mb-0.5 lg:mb-1">Office Hours</p>
         <p>Mon–Fri: 9am – 6pm</p>
         <p>Sat: 9am – 1pm</p>
         <p>Sun: Closed</p>
-        <p className="font-semibold text-stone-400 mb-1 mt-3">Gate Hours</p>
+        <p className="font-semibold text-stone-400 mb-0.5 lg:mb-1 mt-2 lg:mt-3">Gate Hours</p>
         <p>7am – 9pm Daily</p>
       </div>
     </div>
@@ -161,7 +161,7 @@ export default function Sidebar() {
               </SheetTrigger>
               <SheetContent
                 side="left"
-                className="w-[280px] p-0 bg-brand-dark-medium border-stone-700">
+                className="w-[280px] p-0 bg-brand-dark-medium border-stone-700 overflow-y-auto">
                 <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
                 <NavContent onLinkClick={() => setOpen(false)} />
               </SheetContent>
