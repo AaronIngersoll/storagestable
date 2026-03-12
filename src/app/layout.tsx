@@ -23,7 +23,7 @@ export default function RootLayout({
       <body className="min-h-screen bg-brand-warm-light">
         <Sidebar />
         {/* Main content area - offset on desktop for sidebar */}
-        <div className="lg:ml-[260px] min-h-screen flex flex-col">
+        <div className="lg:ml-[300px] min-h-screen flex flex-col">
           {/* Spacer for mobile fixed header */}
           <div className="h-16 lg:hidden" />
           <main className="flex-1">{children}</main>

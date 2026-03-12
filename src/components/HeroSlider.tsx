@@ -6,13 +6,18 @@ import Image from "next/image";
 const slides = [
   {
     id: 1,
-    src: "/images/message-ss-2_edited-1-940x350.jpg",
+    src: "/images/message-ss-2_edited-1.jpg",
     alt: "Storage Stable - We want to make things as easy as we can for you. If you are moving in, use one of our trucks. Come check us out!",
   },
   {
     id: 2,
-    src: "/images/black-logo-with-wood-.jpg",
-    alt: "Storage Stable - Self-Storage & RV Parking - 307-789-5818",
+    src: "/images/storage-stable-collage_edited-1-940x400.jpg",
+    alt: "Storage Stable - Units Available",
+  },
+  {
+    id: 3,
+    src: "/images/Moving-Trucks-Available.jpg",
+    alt: "Storage Stable - Moving Trucks Available",
   },
 ];
 
@@ -29,7 +34,7 @@ export default function HeroSlider() {
   }, [next]);
 
   return (
-    <div className="relative w-full" style={{ aspectRatio: "950 / 350" }}>
+    <div className="relative w-full h-[260px] sm:h-[320px] md:h-[400px] lg:h-[480px]">
       {slides.map((slide, index) => (
         <div
           key={slide.id}
@@ -40,8 +45,8 @@ export default function HeroSlider() {
             src={slide.src}
             alt={slide.alt}
             fill
-            className="object-cover"
-            sizes="(max-width: 1024px) 100vw, calc(100vw - 260px)"
+            className="object-cover object-center"
+            sizes="(max-width: 1024px) 100vw, calc(100vw - 300px)"
             priority={index === 0}
           />
         </div>

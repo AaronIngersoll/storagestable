@@ -25,18 +25,26 @@ const navLinks = [
 
 function NavContent({ onLinkClick }: { onLinkClick?: () => void }) {
   const pathname = usePathname();
-
+  
   return (
     <div className="flex flex-col h-full">
       {/* Logo */}
-      <div className=" pb-4">
-        <Link href="/" onClick={onLinkClick}>
+      <div className="pb-4">
+        <Link href="/" onClick={onLinkClick} className="relative block">
           <Image
-            src="/images/logo.png"
-            alt="Storage Stable"
+            src="/images/wood-telephone-pole-post-grunge-2-320x202.jpg"
+            alt=""
             width={400}
             height={300}
             className="w-full h-auto"
+            priority
+          />
+          <Image
+            src="/images/Storage-Stable-Logo-1-300x249.png"
+            alt="Storage Stable"
+            width={300}
+            height={249}
+            className="absolute inset-0 m-auto w-3/4 h-auto drop-shadow-lg"
             priority
           />
         </Link>
@@ -163,7 +171,7 @@ export default function Sidebar() {
       </div>
 
       {/* Desktop Sidebar */}
-      <aside className="hidden lg:flex lg:flex-col lg:fixed lg:inset-y-0 lg:left-0 lg:w-[260px] bg-brand-dark-medium overflow-y-auto">
+      <aside className="hidden lg:flex lg:flex-col lg:fixed lg:inset-y-0 lg:left-0 lg:w-[300px] bg-brand-dark-medium overflow-y-auto">
         <NavContent />
       </aside>
     </>

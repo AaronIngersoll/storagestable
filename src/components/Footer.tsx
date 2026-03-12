@@ -2,7 +2,12 @@ import { Separator } from "@/components/ui/separator";
 
 export default function Footer() {
   return (
-    <footer className="relative text-stone-300 bg-cover bg-center" style={{ backgroundImage: "url('/images/wood_texture3850.jpg')" }}>
+    <footer
+      className="relative text-stone-300 bg-cover bg-center"
+      style={{
+        backgroundImage:
+          "url('/images/wood-telephone-pole-post-grunge-2-720x400.jpg')",
+      }}>
       <div className="absolute inset-0 bg-brand-dark/85" />
       <div className="relative max-w-5xl mx-auto px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

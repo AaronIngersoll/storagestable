@@ -12,12 +12,12 @@
  */
 :root {
   /* Brand Colors - edit these to change the site look */
-  --brand-primary: #7C2D12;       /* Deep barn red - main brand color */
+  --brand-primary: #971817;       /* Deep barn red - main brand color */
   --brand-primary-light: #9A3412;  /* Lighter barn red - hover states */
-  --brand-accent: #D97706;         /* Warm amber/gold - CTAs and highlights */
-  --brand-accent-light: #F59E0B;   /* Lighter amber - hover states */
-  --brand-dark: #1C1917;           /* Rich brown-black - dark backgrounds */
-  --brand-dark-medium: #292524;    /* Medium dark - sidebar background */
+  --brand-accent: #971817;         /* Warm amber/gold - CTAs and highlights */
+  --brand-accent-light: #6c2c2f;   /* Lighter amber - hover states */
+  --brand-dark: #2C2520;           /* Warm dark brown - dark backgrounds */
+  --brand-dark-medium: #3B3330;    /* Medium dark brown - sidebar background */
   --brand-warm-gray: #78716C;      /* Warm gray - secondary text */
   --brand-warm-light: #F5F0EB;    /* Warm off-white - page backgrounds */
   --brand-cream: #FAFAF9;          /* Cream - card backgrounds */
