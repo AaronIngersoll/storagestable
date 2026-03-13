@@ -27,7 +27,9 @@ export default function Home() {
                   />
                 </svg>
               </div>
-              <h3 className="font-semibold text-xl mb-3">Multiple Sizes</h3>
+              <h3 className="font-semibold text-brand-primary text-xl mb-3">
+                Multiple Sizes
+              </h3>
               <p className="text-base text-stone-600 leading-relaxed">
                 From 3x5 closet-sized units to 10x30 oversized garages, plus RV
                 storage.
@@ -57,7 +59,9 @@ export default function Home() {
                   />
                 </svg>
               </div>
-              <h3 className="font-semibold text-xl mb-3">Free Moving Truck</h3>
+              <h3 className="font-semibold text-brand-primary text-xl mb-3">
+                Free Moving Truck
+              </h3>
               <p className="text-base text-stone-600 leading-relaxed">
                 Use our free moving truck for local moves into your storage
                 unit.
@@ -93,7 +97,7 @@ export default function Home() {
                   />
                 </svg>
               </div>
-              <h3 className="font-semibold text-xl mb-3">
+              <h3 className="font-semibold text-brand-primary text-xl mb-3">
                 50% Off First Month
               </h3>
               <p className="text-base text-stone-600 leading-relaxed">

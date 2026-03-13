@@ -14,43 +14,50 @@ const unitSizes = [
     size: "5' x 5'",
     sqft: 25,
     equivalent: "Regular Closet",
-    holds: "Personal items, clothes, boxes, skis, children's toys, small furniture items, business records and sales rep materials.",
+    holds:
+      "Personal items, clothes, boxes, skis, children's toys, small furniture items, business records and sales rep materials.",
   },
   {
     size: "5' x 10'",
     sqft: 50,
     equivalent: "Walk-in Closet",
-    holds: "Small amounts of furniture, sofas, chairs, chest of drawers, boxspring and mattress, business supplies and records.",
+    holds:
+      "Small amounts of furniture, sofas, chairs, chest of drawers, boxspring and mattress, business supplies and records.",
   },
   {
     size: "7.5' x 10'",
     sqft: 75,
     equivalent: "Large Closet",
-    holds: "Small amounts of furniture, sofas, chairs, chest of drawers, boxspring and mattress, business supplies and records.",
+    holds:
+      "Small amounts of furniture, sofas, chairs, chest of drawers, boxspring and mattress, business supplies and records.",
   },
   {
     size: "10' x 10'",
     sqft: 100,
     equivalent: "Half a one-car garage",
-    holds: "One-bedroom apartment with major appliances, other furniture and supplies.",
+    holds:
+      "One-bedroom apartment with major appliances, other furniture and supplies.",
   },
   {
     size: "10' x 15'",
     sqft: 150,
     equivalent: "Two-thirds of a garage",
-    holds: "A two-bedroom apartment or house, including appliances, boxes and commercial storage inventory.",
+    holds:
+      "A two-bedroom apartment or house, including appliances, boxes and commercial storage inventory.",
   },
   {
     size: "10' x 20'",
     sqft: 200,
     equivalent: "One-car garage",
-    holds: "A three-bedroom house with major appliances, plus lots of boxes. Ideal for storage racks.",
+    holds:
+      "A three-bedroom house with major appliances, plus lots of boxes. Ideal for storage racks.",
   },
   {
     size: "10' x 30'",
     sqft: 300,
     equivalent: "Oversized garage",
-    holds: "A four-to five-bedroom house with major appliances and room for boxes. Excellent for business storage.",
+    holds:
+      "A four-to five-bedroom house with major appliances and room for boxes. Excellent for business storage.",
   },
 ];
 
@@ -60,7 +67,9 @@ export default function StorageFaqs() {
       {/* Hero */}
       <div className="py-10 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-3xl font-bold mb-3 text-brand-primary">Storage FAQ&apos;s</h1>
+          <h1 className="text-3xl font-bold mb-3 text-brand-primary">
+            Storage FAQ&apos;s
+          </h1>
           <p className="text-stone-500">
             Frequently asked questions about our storage units
           </p>
@@ -71,42 +80,55 @@ export default function StorageFaqs() {
         {/* FAQ Cards */}
         <Card className="border-0 shadow-sm bg-white">
           <CardContent className="p-6">
-            <h3 className="font-bold text-lg text-brand-primary mb-3">When can I access my storage space?</h3>
+            <h3 className="font-bold text-lg text-brand-primary mb-3">
+              When can I access my storage space?
+            </h3>
             <p className="text-stone-700 text-sm leading-relaxed">
-              Our customers have the benefit of extensive opening hours. Storage Stable is open Monday
-              through Saturday, six days a week, should you need assistance from our on-site managers.
-              In addition, our gate hours are 7 am to 9 pm, 365 days a year.
+              Our customers have the benefit of extensive opening hours. Storage
+              Stable is open Monday through Saturday, six days a week, should
+              you need assistance from our on-site managers. In addition, our
+              gate hours are 7 am to 9 pm, 365 days a year.
             </p>
           </CardContent>
         </Card>
 
         <Card className="border-0 shadow-sm bg-white">
           <CardContent className="p-6">
-            <h3 className="font-bold text-lg text-brand-primary mb-3">What&apos;s the minimum time I can store for?</h3>
+            <h3 className="font-bold text-lg text-brand-primary mb-3">
+              What&apos;s the minimum time I can store for?
+            </h3>
             <p className="text-stone-700 text-sm leading-relaxed">
-              All rental agreements on mini storage units are month-to-month. One month is the minimum,
-              but we sure don&apos;t mind if you stay longer. We love our customers!
+              All rental agreements on mini storage units are month-to-month.
+              One month is the minimum, but we sure don&apos;t mind if you stay
+              longer. We love our customers!
             </p>
           </CardContent>
         </Card>
 
         <Card className="border-0 shadow-sm bg-white">
           <CardContent className="p-6">
-            <h3 className="font-bold text-lg text-brand-primary mb-3">Where is my nearest location?</h3>
+            <h3 className="font-bold text-lg text-brand-primary mb-3">
+              Where is my nearest location?
+            </h3>
             <p className="text-stone-700 text-sm leading-relaxed">
-              We have two convenient locations in Evanston, Wyoming. Our main location is next to the
-              Evanston Regional Hospital on Arrowhead Drive. We offer discounted storage options at our
-              Duncomb site — ask us to learn more.
+              We have two convenient locations in Evanston, Wyoming. Our main
+              location is next to the Evanston Regional Hospital on Arrowhead
+              Drive. We offer discounted storage options at our Duncomb site —
+              ask us to learn more.
             </p>
           </CardContent>
         </Card>
 
         <Card className="border-0 shadow-sm bg-white">
           <CardContent className="p-6">
-            <h3 className="font-bold text-lg text-brand-primary mb-3">Need help packing?</h3>
+            <h3 className="font-bold text-lg text-brand-primary mb-3">
+              Need help packing?
+            </h3>
             <p className="text-stone-700 text-sm leading-relaxed">
               Visit our{" "}
-              <Link href="/storage-tips" className="text-brand-accent hover:underline font-medium">
+              <Link
+                href="/storage-tips"
+                className="text-brand-accent hover:underline font-medium">
                 storage tips
               </Link>{" "}
               page for help with packing.
@@ -117,16 +139,21 @@ export default function StorageFaqs() {
         {/* Unit Size Guide */}
         <Card className="border-0 shadow-md bg-white">
           <CardContent className="p-6">
-            <h3 className="font-bold text-lg text-brand-primary mb-5">What size of storage unit do I need?</h3>
+            <h3 className="font-bold text-lg text-brand-primary mb-5">
+              What size of storage unit do I need?
+            </h3>
             <div className="space-y-4">
               {unitSizes.map((unit) => (
                 <div
                   key={unit.size}
-                  className="flex flex-col sm:flex-row gap-3 p-4 rounded-lg bg-stone-50"
-                >
+                  className="flex flex-col sm:flex-row gap-3 p-4 rounded-lg bg-stone-50">
                   <div className="shrink-0 sm:w-28">
-                    <div className="text-lg font-bold text-brand-primary">{unit.size}</div>
-                    <Badge variant="secondary" className="text-xs mt-1">{unit.sqft} sq ft</Badge>
+                    <div className="text-lg font-bold text-brand-primary">
+                      {unit.size}
+                    </div>
+                    <Badge variant="default" className="text-xs mt-1">
+                      {unit.sqft} sq ft
+                    </Badge>
                   </div>
                   <div className="flex-1">
                     <div className="text-sm font-semibold text-stone-800 mb-1">
