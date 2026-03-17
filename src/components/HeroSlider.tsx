@@ -34,7 +34,7 @@ export default function HeroSlider() {
   }, [next]);
 
   return (
-    <div className="relative w-full h-[260px] sm:h-[320px] md:h-[400px] lg:h-[480px]">
+    <div className="relative w-full aspect-[12/5] xl:h-[480px]">
       {slides.map((slide, index) => (
         <div
           key={slide.id}
@@ -45,7 +45,7 @@ export default function HeroSlider() {
             src={slide.src}
             alt={slide.alt}
             fill
-            className="object-cover object-center"
+            className="object-contain lg:object-cover object-center"
             sizes="(max-width: 1024px) 100vw, calc(100vw - 300px)"
             priority={index === 0}
           />
