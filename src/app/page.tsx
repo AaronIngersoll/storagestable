@@ -9,7 +9,7 @@ export default function Home() {
       <HeroSlider />
 
       {/* Section 1: Multiple Sizes */}
-      <section className="bg-brand-dark-medium py-16 px-6 md:px-12 lg:px-24">
+      <section className="bg-brand-warm-light py-16 px-6 md:px-12 lg:px-24">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12 lg:gap-20">
           {/* Image with decorative frame */}
           <div className="relative w-full md:w-1/2">
@@ -27,10 +27,10 @@ export default function Home() {
 
           {/* Text */}
           <div className="w-full md:w-1/2 space-y-6">
-            <h2 className="text-4xl md:text-5xl font-black tracking-tight text-white">
+            <h2 className="text-4xl md:text-5xl font-black tracking-tight text-stone-900">
               Multiple Sizes Available
             </h2>
-            <p className="text-lg leading-relaxed text-stone-300 font-light max-w-xl">
+            <p className="text-lg leading-relaxed text-stone-600 font-light max-w-xl">
               From 3x5 closet-sized units to 10x30 oversized garages, plus
               outdoor RV and vehicle storage. Whatever you need to store,
               we&apos;ve got the space for it.
@@ -83,7 +83,7 @@ export default function Home() {
       </section>
 
       {/* Section 3: 50% Off First Month */}
-      <section className="bg-brand-dark-medium py-16 px-6 md:px-12 lg:px-24">
+      <section className="bg-brand-warm-light py-16 px-6 md:px-12 lg:px-24">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12 lg:gap-20">
           {/* Image with decorative frame */}
           <div className="relative w-full md:w-1/2">
@@ -101,10 +101,10 @@ export default function Home() {
 
           {/* Text */}
           <div className="w-full md:w-1/2 space-y-6">
-            <h2 className="text-4xl md:text-5xl font-black tracking-tight text-white">
+            <h2 className="text-4xl md:text-5xl font-black tracking-tight text-stone-900">
               50% Off First Month
             </h2>
-            <p className="text-lg leading-relaxed text-stone-300 font-light max-w-xl">
+            <p className="text-lg leading-relaxed text-stone-600 font-light max-w-xl">
               New customers get 50% off their first month&apos;s rent. Come
               visit our office, give us a call, or browse available units
               online. Some conditions apply.
