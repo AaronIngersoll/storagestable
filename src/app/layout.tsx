@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={cn("font-sans", geist.variable, dancingScript.variable)}>
-      <body className="min-h-screen bg-brand-warm-light">
+      <body className="min-h-screen bg-brand-warm-light flex flex-col">
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
