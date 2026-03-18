@@ -156,6 +156,20 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      {/* Full-width Map */}
+      <section className="w-full">
+        <iframe
+          src="https://maps.google.com/maps?q=51+Arrowhead+Drive,+Evanston,+WY+82930&t=m&z=15&output=embed&iwloc=B"
+          width="100%"
+          height="400"
+          className="border-0 block"
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          title="Storage Stable Location — 51 Arrowhead Drive, Evanston, WY"
+        />
+      </section>
     </div>
   );
 }
