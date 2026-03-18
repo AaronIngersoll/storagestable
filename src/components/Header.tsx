@@ -78,37 +78,48 @@ export default function Header() {
           </nav>
 
           {/* Right side: Phone + Pay Online + Mobile Menu */}
-          <div className="flex items-center gap-4 lg:gap-5">
+          <div className="flex items-center gap-3 sm:gap-4 lg:gap-5">
+            {/* Phone - inline on desktop, stacked under Pay Online on mobile */}
             <a
               href="tel:307-789-5818"
-              className="hidden sm:flex items-center gap-2 text-base font-bold text-white hover:text-brand-accent transition-colors"
+              className="hidden lg:flex items-center gap-2 text-base font-bold text-white hover:text-brand-accent transition-colors"
             >
               <Phone className="h-4 w-4" />
               (307) 789-5818
             </a>
 
-            <Button
-              render={
-                <a
-                  href="http://emove.com/login/"
-                  target="_blank"
-                  rel="nofollow noopener noreferrer"
-                />
-              }
-              className="bg-brand-accent hover:bg-brand-accent-light text-white font-bold text-sm sm:text-base px-5 sm:px-7 py-2.5 rounded-full shadow-md"
-            >
-              Pay Online
-            </Button>
+            {/* Pay Online + Phone stacked on mobile */}
+            <div className="flex flex-col items-center gap-1">
+              <Button
+                render={
+                  <a
+                    href="http://emove.com/login/"
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
+                  />
+                }
+                className="bg-brand-accent hover:bg-brand-accent-light text-white font-bold text-xs sm:text-sm px-4 sm:px-6 py-2 rounded-full shadow-md"
+              >
+                Pay Online
+              </Button>
+              <a
+                href="tel:307-789-5818"
+                className="lg:hidden flex items-center gap-1 text-[11px] sm:text-xs font-semibold text-stone-300 hover:text-brand-accent transition-colors"
+              >
+                <Phone className="h-3 w-3" />
+                (307) 789-5818
+              </a>
+            </div>
 
-            {/* Mobile Menu Trigger */}
+            {/* Mobile Menu Trigger - icon with "Menu" text */}
             <Sheet open={open} onOpenChange={setOpen}>
               <SheetTrigger
                 render={
-                  <button className="lg:hidden p-2 text-white hover:text-brand-accent transition-colors" />
+                  <button className="lg:hidden flex flex-col items-center gap-0.5 text-white hover:text-brand-accent transition-colors p-1" />
                 }
               >
                 <Menu className="h-6 w-6" />
-                <span className="sr-only">Open menu</span>
+                <span className="text-[10px] font-bold uppercase tracking-wide">Menu</span>
               </SheetTrigger>
               <SheetContent
                 side="right"

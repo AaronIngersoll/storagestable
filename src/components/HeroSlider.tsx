@@ -5,43 +5,9 @@ import { Star } from "lucide-react";
 export default function HeroSlider() {
   return (
     <section className="relative w-full overflow-hidden">
-      {/* Mobile: stacked layout — text on top, image below */}
-      <div className="md:hidden">
-        {/* Text block */}
-        <div className="bg-white px-6 py-8 sm:px-10 sm:py-10">
-          <p className="text-stone-600 text-base font-medium mb-2">
-            Self-Storage & RV Parking in Evanston, WY
-          </p>
-          <h1 className="text-4xl sm:text-5xl font-black text-stone-900 leading-tight mb-4">
-            We make storage{" "}
-            <span className="text-brand-accent">easy.</span>
-          </h1>
-          <p className="text-stone-700 text-base sm:text-lg leading-relaxed mb-5">
-            Moving in? Use one of our trucks. We want to make things as easy as
-            we can for you. Come check us out!
-          </p>
-          <div className="mb-6">
-            <span className="inline-block bg-brand-accent text-white text-sm sm:text-base font-bold px-5 py-2.5 rounded-sm tracking-wide shadow-md">
-              Store your stuff in our stalls
-            </span>
-          </div>
-          <div className="flex flex-wrap gap-3">
-            <Link
-              href="/available"
-              className="inline-block bg-brand-accent hover:bg-brand-accent-light text-white font-bold text-sm sm:text-base px-7 py-3.5 rounded-full transition-colors shadow-lg"
-            >
-              View Available Units
-            </Link>
-            <Link
-              href="/contact-us"
-              className="inline-block bg-white hover:bg-stone-50 text-stone-800 font-bold text-sm sm:text-base px-7 py-3.5 rounded-full transition-colors shadow-lg border border-stone-300"
-            >
-              Contact Us
-            </Link>
-          </div>
-        </div>
-        {/* Image below */}
-        <div className="relative w-full h-[250px] sm:h-[300px]">
+      {/* Mobile: gradient top-to-bottom over image */}
+      <div className="md:hidden relative min-h-[520px]">
+        <div className="absolute inset-0">
           <Image
             src="/images/IMG_1128-1024x683.jpeg"
             alt="Storage Stable facility in Evanston, Wyoming"
@@ -50,10 +16,44 @@ export default function HeroSlider() {
             sizes="100vw"
             priority
           />
+          <div className="absolute inset-0 bg-gradient-to-b from-white from-40% via-white/60 via-60% to-transparent to-80%" />
+        </div>
+
+        <div className="relative z-10 px-5 pt-8 pb-6">
+          <p className="text-stone-600 text-sm font-medium mb-2">
+            Self-Storage & RV Parking in Evanston, WY
+          </p>
+          <h1 className="text-3xl font-black text-stone-900 leading-tight mb-3">
+            We make storage{" "}
+            <span className="text-brand-accent">easy.</span>
+          </h1>
+          <p className="text-stone-700 text-sm leading-relaxed mb-4">
+            Moving in? Use one of our trucks. We want to make things as easy as
+            we can for you. Come check us out!
+          </p>
+          <p className="flex items-center gap-2 text-base text-brand-accent mb-6 font-[family-name:var(--font-script)]">
+            <Star className="h-4 w-4 fill-brand-accent text-brand-accent flex-shrink-0" />
+            <span className="font-bold">Store your stuff in our stalls</span>
+            <Star className="h-4 w-4 fill-brand-accent text-brand-accent flex-shrink-0" />
+          </p>
+          <div className="flex flex-wrap gap-3">
+            <Link
+              href="/available"
+              className="inline-block bg-brand-accent hover:bg-brand-accent-light text-white font-bold text-sm px-6 py-3 rounded-full transition-colors shadow-lg"
+            >
+              View Available Units
+            </Link>
+            <Link
+              href="/contact-us"
+              className="inline-block bg-white hover:bg-stone-50 text-stone-800 font-bold text-sm px-6 py-3 rounded-full transition-colors shadow-lg border border-stone-300"
+            >
+              Contact Us
+            </Link>
+          </div>
         </div>
       </div>
 
-      {/* Desktop: gradient overlay layout */}
+      {/* Desktop: gradient left-to-right overlay */}
       <div className="hidden md:block relative h-[500px] lg:h-[550px]">
         <div className="absolute inset-0">
           <Image
