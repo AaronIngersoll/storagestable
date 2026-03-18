@@ -81,7 +81,7 @@ export default function ReviewsScroller() {
         <div
           className="scroll-track flex gap-5 px-6"
           style={{
-            animation: "scroll 30s linear infinite",
+            animation: "scroll 90s linear infinite",
             width: "max-content",
           }}
         >
