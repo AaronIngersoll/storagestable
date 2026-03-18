@@ -37,90 +37,51 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 bg-brand-dark border-b border-stone-800 shadow-md h-24 sm:h-28 lg:h-32">
-      <div className="flex items-center h-full">
-        {/* Logo pinned left */}
-        <Link
-          href="/"
-          className="relative flex-shrink-0 h-full w-52 sm:w-64 lg:w-80"
-        >
-          <Image
-            src="/images/black-logo-with-wood--700x367.jpg"
-            alt="Storage Stable"
-            fill
-            className="object-contain"
-            priority
-          />
-        </Link>
-
-        {/* Right section with nav + CTA */}
-        <div className="flex-1 flex items-center justify-between px-4 sm:px-6 lg:px-10">
-
-          {/* Desktop Nav Links */}
-          <nav className="hidden lg:flex items-center gap-2">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={`px-4 py-2 text-[15px] font-semibold transition-colors ${
-                  pathname === link.href ||
-                  (link.href === "/storage-tips" &&
-                    (pathname === "/storage-tips" ||
-                      pathname === "/moving-faqs" ||
-                      pathname === "/storage-faqs"))
-                    ? "text-brand-accent"
-                    : "text-white hover:text-brand-accent"
-                }`}
-              >
-                {link.label}
-              </Link>
-            ))}
-          </nav>
-
-          {/* Right side: Phone + Pay Online + Mobile Menu */}
-          <div className="flex items-center gap-3 sm:gap-4 lg:gap-5">
-            {/* Phone - inline on desktop, stacked under Pay Online on mobile */}
-            <a
-              href="tel:307-789-5818"
-              className="hidden lg:flex items-center gap-2 text-base font-bold text-white hover:text-brand-accent transition-colors"
-            >
-              <Phone className="h-4 w-4" />
-              (307) 789-5818
-            </a>
-
-            {/* Pay Online + Phone stacked on mobile */}
-            <div className="flex flex-col items-center gap-1">
-              <Button
-                render={
-                  <a
-                    href="http://emove.com/login/"
-                    target="_blank"
-                    rel="nofollow noopener noreferrer"
-                  />
-                }
-                className="bg-brand-accent hover:bg-brand-accent-light text-white font-bold text-xs sm:text-sm px-4 sm:px-6 py-2 rounded-full shadow-md"
-              >
-                Pay Online
-              </Button>
+    <header className="sticky top-0 z-50 bg-brand-dark border-b border-stone-800 shadow-md">
+      {/* Mobile: logo on top, CTAs below */}
+      <div className="lg:hidden">
+        {/* Logo row */}
+        <div className="flex justify-center py-2">
+          <Link href="/" className="relative w-52 sm:w-64 h-16 sm:h-20">
+            <Image
+              src="/images/logo.png"
+              alt="Storage Stable"
+              fill
+              className="object-contain"
+              priority
+            />
+          </Link>
+        </div>
+        {/* CTA row */}
+        <div className="flex items-center justify-center gap-4 pb-2">
+          <Button
+            render={
               <a
-                href="tel:307-789-5818"
-                className="lg:hidden flex items-center gap-1 text-[11px] sm:text-xs font-semibold text-stone-300 hover:text-brand-accent transition-colors"
-              >
-                <Phone className="h-3 w-3" />
-                (307) 789-5818
-              </a>
-            </div>
-
-            {/* Mobile Menu Trigger - icon with "Menu" text */}
-            <Sheet open={open} onOpenChange={setOpen}>
-              <SheetTrigger
-                render={
-                  <button className="lg:hidden flex flex-col items-center gap-0.5 text-white hover:text-brand-accent transition-colors p-1" />
-                }
-              >
-                <Menu className="h-6 w-6" />
-                <span className="text-[10px] font-bold uppercase tracking-wide">Menu</span>
-              </SheetTrigger>
+                href="http://emove.com/login/"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+              />
+            }
+            className="bg-brand-accent hover:bg-brand-accent-light text-white font-bold text-xs px-4 py-1.5 rounded-full shadow-md"
+          >
+            Pay Online
+          </Button>
+          <a
+            href="tel:307-789-5818"
+            className="flex items-center gap-1 text-xs font-semibold text-stone-300 hover:text-brand-accent transition-colors"
+          >
+            <Phone className="h-3 w-3" />
+            (307) 789-5818
+          </a>
+          <Sheet open={open} onOpenChange={setOpen}>
+            <SheetTrigger
+              render={
+                <button className="flex flex-col items-center gap-0.5 text-white hover:text-brand-accent transition-colors p-1" />
+              }
+            >
+              <Menu className="h-5 w-5" />
+              <span className="text-[9px] font-bold uppercase tracking-wide">Menu</span>
+            </SheetTrigger>
               <SheetContent
                 side="right"
                 className="w-[300px] p-0 bg-white border-stone-200"
@@ -203,6 +164,62 @@ export default function Header() {
                 </div>
               </SheetContent>
             </Sheet>
+        </div>
+      </div>
+
+      {/* Desktop: single row */}
+      <div className="hidden lg:flex items-center h-36">
+        <Link href="/" className="relative flex-shrink-0 h-full w-88">
+          <Image
+            src="/images/logo.png"
+            alt="Storage Stable"
+            fill
+            className="object-contain"
+            priority
+          />
+        </Link>
+
+        <div className="flex-1 flex items-center justify-between px-10">
+          <nav className="flex items-center gap-2">
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={`px-4 py-2 text-[15px] font-semibold transition-colors ${
+                  pathname === link.href ||
+                  (link.href === "/storage-tips" &&
+                    (pathname === "/storage-tips" ||
+                      pathname === "/moving-faqs" ||
+                      pathname === "/storage-faqs"))
+                    ? "text-brand-accent"
+                    : "text-white hover:text-brand-accent"
+                }`}
+              >
+                {link.label}
+              </Link>
+            ))}
+          </nav>
+
+          <div className="flex items-center gap-5">
+            <a
+              href="tel:307-789-5818"
+              className="flex items-center gap-2 text-base font-bold text-white hover:text-brand-accent transition-colors"
+            >
+              <Phone className="h-4 w-4" />
+              (307) 789-5818
+            </a>
+            <Button
+              render={
+                <a
+                  href="http://emove.com/login/"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                />
+              }
+              className="bg-brand-accent hover:bg-brand-accent-light text-white font-bold text-sm px-7 py-2.5 rounded-full shadow-md"
+            >
+              Pay Online
+            </Button>
           </div>
         </div>
       </div>
