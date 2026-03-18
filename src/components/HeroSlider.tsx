@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Star } from "lucide-react";
 
 export default function HeroSlider() {
   return (
@@ -79,11 +80,11 @@ export default function HeroSlider() {
               Moving in? Use one of our trucks. We want to make things as easy
               as we can for you. Come check us out!
             </p>
-            <div className="mb-8">
-              <span className="inline-block bg-brand-accent text-white text-base font-bold px-5 py-2.5 rounded-sm tracking-wide shadow-md">
-                Store your stuff in our stalls
-              </span>
-            </div>
+            <p className="flex items-center gap-2 text-xl md:text-2xl text-brand-accent mb-8 font-[family-name:var(--font-script)]">
+              <Star className="h-5 w-5 fill-brand-accent text-brand-accent flex-shrink-0" />
+              <span className="font-bold">Store your stuff in our stalls</span>
+              <Star className="h-5 w-5 fill-brand-accent text-brand-accent flex-shrink-0" />
+            </p>
             <div className="flex flex-wrap gap-3">
               <Link
                 href="/available"

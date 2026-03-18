@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
+import { Geist, Dancing_Script } from "next/font/google";
 import { cn } from "@/lib/utils";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import "./globals.css";
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
+const dancingScript = Dancing_Script({ subsets: ["latin"], variable: "--font-script" });
 
 export const metadata: Metadata = {
   title: "Storage Stable - Evanston, WY Self Storage",
@@ -19,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={cn("font-sans", geist.variable)}>
+    <html lang="en" className={cn("font-sans", geist.variable, dancingScript.variable)}>
       <body className="min-h-screen bg-brand-warm-light">
         <Header />
         <main className="flex-1">{children}</main>

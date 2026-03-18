@@ -37,30 +37,18 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 relative border-b border-stone-200 shadow-sm overflow-hidden h-24 sm:h-28 lg:h-32">
-      {/* Full-width wood background */}
-      <Image
-        src="/images/wood-telephone-pole-post-grunge-2-720x400.jpg"
-        alt=""
-        fill
-        className="object-cover"
-        priority
-      />
-      {/* Dark overlay for readability */}
-      <div className="absolute inset-0 bg-black/40" />
-
-      <div className="relative z-10 flex items-center h-full">
+    <header className="sticky top-0 z-50 bg-brand-dark border-b border-stone-800 shadow-md h-24 sm:h-28 lg:h-32">
+      <div className="flex items-center h-full">
         {/* Logo pinned left */}
         <Link
           href="/"
-          className="flex-shrink-0 h-full flex items-center pl-4 sm:pl-6 lg:pl-10"
+          className="relative flex-shrink-0 h-full w-52 sm:w-64 lg:w-80"
         >
           <Image
-            src="/images/logo.png"
+            src="/images/black-logo-with-wood--700x367.jpg"
             alt="Storage Stable"
-            width={624}
-            height={303}
-            className="h-16 sm:h-20 lg:h-24 w-auto drop-shadow-lg"
+            fill
+            className="object-contain"
             priority
           />
         </Link>
