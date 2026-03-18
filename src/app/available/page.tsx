@@ -4,9 +4,10 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
 export const metadata: Metadata = {
-  title: "Available Units - Storage Stable",
+  title: "Available Storage Units - Sizes & Pricing",
   description:
-    "Storage unit sizes and availability at Storage Stable in Evanston, WY.",
+    "Browse available self storage units at Storage Stable in Evanston, WY. Sizes from 3x5 to 10x30 plus RV parking. 50% off first month for new customers. Call (307) 789-5818.",
+  alternates: { canonical: "/available" },
 };
 
 const units = [

@@ -4,9 +4,46 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
 export const metadata: Metadata = {
-  title: "Storage FAQ's - Storage Stable",
+  title: "Storage Unit FAQ's - Sizes, Access Hours & Pricing",
   description:
-    "Frequently asked questions about storage units at Storage Stable in Evanston, WY.",
+    "Answers to common storage questions at Storage Stable in Evanston, WY. Unit sizes from 3x5 to 10x30, gate hours 7am-9pm daily, month-to-month rentals. Call (307) 789-5818.",
+  alternates: { canonical: "/storage-faqs" },
+};
+
+const storageFaqs = [
+  {
+    question: "When can I access my storage space?",
+    answer:
+      "Our customers have the benefit of extensive opening hours. Storage Stable is open Monday through Saturday, six days a week, should you need assistance from our on-site managers. In addition, our gate hours are 7 am to 9 pm, 365 days a year.",
+  },
+  {
+    question: "What's the minimum time I can store for?",
+    answer:
+      "All rental agreements on mini storage units are month-to-month. One month is the minimum, but we sure don't mind if you stay longer. We love our customers!",
+  },
+  {
+    question: "Where is my nearest location?",
+    answer:
+      "We have two convenient locations in Evanston, Wyoming. Our main location is next to the Evanston Regional Hospital on Arrowhead Drive. We offer discounted storage options at our Duncomb site — ask us to learn more.",
+  },
+  {
+    question: "What size of storage unit do I need?",
+    answer:
+      "We offer units from 5x5 (25 sq ft, closet-sized) up to 10x30 (300 sq ft, oversized garage). A 10x10 fits a one-bedroom apartment, a 10x20 fits a three-bedroom house. Call us at (307) 789-5818 for help choosing the right size.",
+  },
+];
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: storageFaqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.answer,
+    },
+  })),
 };
 
 const unitSizes = [
@@ -64,6 +101,10 @@ const unitSizes = [
 export default function StorageFaqs() {
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       {/* Hero */}
       <div className="py-10 px-6">
         <div className="max-w-4xl mx-auto text-center">

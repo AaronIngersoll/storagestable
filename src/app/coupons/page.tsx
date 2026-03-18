@@ -4,8 +4,10 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Coupons - Storage Stable",
-  description: "Storage Stable coupons and special offers in Evanston, WY.",
+  title: "Coupons & Deals - 50% Off First Month",
+  description:
+    "Get 50% off your first month at Storage Stable in Evanston, WY. New customer discount on all storage unit sizes. Some conditions apply. Call (307) 789-5818.",
+  alternates: { canonical: "/coupons" },
 };
 
 export default function Coupons() {

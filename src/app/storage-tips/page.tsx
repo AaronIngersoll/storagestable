@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import { Card, CardContent } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Storage Tips - Storage Stable",
+  title: "Storage Tips - Packing & Organization Guide",
   description:
-    "Tips for organizing your self storage unit at Storage Stable in Evanston, WY.",
+    "Expert packing and storage tips from Storage Stable in Evanston, WY. Free pallets, boxes, and moving truck available. Learn how to organize your storage unit.",
+  alternates: { canonical: "/storage-tips" },
 };
 
 const tips = [

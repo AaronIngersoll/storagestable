@@ -2,14 +2,56 @@ import type { Metadata } from "next";
 import { Card, CardContent } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Moving FAQ's - Storage Stable",
+  title: "Moving FAQ's - Tips, Timeline & Free Truck",
   description:
-    "Frequently asked questions about moving and using Storage Stable in Evanston, WY.",
+    "Moving tips and FAQ's from Storage Stable in Evanston, WY. Free Penske moving truck for local moves, packing timeline, and storage advice. Call (307) 789-5818.",
+  alternates: { canonical: "/moving-faqs" },
+};
+
+const movingFaqs = [
+  {
+    question:
+      "Why should I store with Storage Stable instead of using a friend's garage or attic?",
+    answer:
+      "Storage Stable offers 365-day access, clean well-lit driveways, on-site managers, and secure gated facilities. Friends can't give you the same peace of mind and access advantage. If you're selling your home, clearing out possessions makes it more attractive to buyers.",
+  },
+  {
+    question: "Does Storage Stable offer a free moving truck?",
+    answer:
+      "Yes! For local moves into your storage unit, you can use our free Penske moving truck at no charge. We also rent Penske trucks for longer moves. Call (307) 789-5818 to reserve.",
+  },
+  {
+    question: "What should I do one month before my move?",
+    answer:
+      "Call around for mover quotes and make sure they're insured. Order packing materials. Start packing non-essential items and mark boxes clearly. Clear out the attic. Arrange mail re-direction at least 2 weeks in advance.",
+  },
+  {
+    question: "What should I do the day before my move?",
+    answer:
+      "Prepare a moving day survival kit with essentials like coffee, snacks, towels, and toilet paper. Pack valuables to carry with you. Keep important documents accessible. Defrost the freezer and fridge.",
+  },
+];
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: movingFaqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.answer,
+    },
+  })),
 };
 
 export default function MovingFaqs() {
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       {/* Hero */}
       <div className="py-10 px-6">
         <div className="max-w-4xl mx-auto text-center">

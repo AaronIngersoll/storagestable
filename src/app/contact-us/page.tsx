@@ -3,8 +3,10 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Contact Us - Storage Stable",
-  description: "Contact Storage Stable in Evanston, WY. Call 307-789-5818.",
+  title: "Contact Us - Directions, Hours & Phone",
+  description:
+    "Contact Storage Stable at 51 Arrowhead Drive, Evanston, WY 82930. Call (307) 789-5818. Office hours Mon-Fri 9am-6pm, Sat 9am-1pm. Gate access 7am-9pm daily.",
+  alternates: { canonical: "/contact-us" },
 };
 
 export default function ContactUs() {
@@ -69,6 +71,49 @@ export default function ContactUs() {
               Call Now
             </Button>
           </div>
+        </div>
+
+        {/* Additional info for SEO content depth */}
+        <div className="mt-12 space-y-6">
+          <Card className="border-0 shadow-sm bg-white">
+            <CardContent className="p-6">
+              <h2 className="font-bold text-lg text-brand-primary mb-3">
+                About Our Location
+              </h2>
+              <p className="text-stone-700 text-sm leading-relaxed mb-3">
+                Storage Stable is conveniently located at 51 Arrowhead Drive in Evanston, Wyoming,
+                directly across from the Evanston Regional Hospital. We serve residents and businesses
+                throughout Evanston, Uinta County, and the surrounding areas including Bear River,
+                Lyman, and Mountain View.
+              </p>
+              <p className="text-stone-700 text-sm leading-relaxed">
+                Our facility features clean, well-lit driveways with on-site management. We offer
+                self storage units ranging from 3x5 closet-sized spaces to 10x30 oversized garages,
+                plus outdoor RV and vehicle parking. New customers receive 50% off their first month.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card className="border-0 shadow-sm bg-white">
+            <CardContent className="p-6">
+              <h2 className="font-bold text-lg text-brand-primary mb-3">
+                Office & Gate Hours
+              </h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-stone-700">
+                <div>
+                  <h3 className="font-semibold text-stone-900 mb-1">Office Hours</h3>
+                  <p>Monday &ndash; Friday: 9:00 AM &ndash; 6:00 PM</p>
+                  <p>Saturday: 9:00 AM &ndash; 1:00 PM</p>
+                  <p>Sunday: Closed</p>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-stone-900 mb-1">Gate Hours</h3>
+                  <p>Every Day: 7:00 AM &ndash; 9:00 PM</p>
+                  <p className="text-stone-500 text-xs mt-1">365 days a year</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </div>
