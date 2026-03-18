@@ -2,11 +2,14 @@ import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import HeroSlider from "@/components/HeroSlider";
+import ReviewsScroller from "@/components/ReviewsScroller";
 
 export default function Home() {
   return (
     <div>
       <HeroSlider />
+
+      <ReviewsScroller />
 
       {/* Section 1: Multiple Sizes */}
       <section className="bg-brand-warm-light py-16 px-6 md:px-12 lg:px-24">
