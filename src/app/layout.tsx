@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import { cn } from "@/lib/utils";
-import Sidebar from "@/components/Sidebar";
+import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import "./globals.css";
 
@@ -21,14 +21,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={cn("font-sans", geist.variable)}>
       <body className="min-h-screen bg-brand-warm-light">
-        <Sidebar />
-        {/* Main content area - offset on desktop for sidebar */}
-        <div className="lg:ml-[300px] min-h-screen flex flex-col">
-          {/* Spacer for mobile fixed header */}
-          <div className="h-16 lg:hidden" />
-          <main className="flex-1">{children}</main>
-          <Footer />
-        </div>
+        <Header />
+        <main className="flex-1">{children}</main>
+        <Footer />
       </body>
     </html>
   );
