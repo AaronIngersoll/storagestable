@@ -58,7 +58,7 @@
 }
 
 @theme inline {
-  --font-sans: var(--font-sans);
+  --font-sans: "Geist", "Geist Fallback", ui-sans-serif, system-ui, sans-serif;
   --color-brand-primary: var(--brand-primary);
   --color-brand-primary-light: var(--brand-primary-light);
   --color-brand-accent: var(--brand-accent);

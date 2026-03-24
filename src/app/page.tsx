@@ -40,8 +40,7 @@ export default function Home() {
             </p>
             <Button
               render={<Link href="/available" />}
-              className="bg-brand-accent hover:bg-brand-accent-light text-white font-extrabold py-3 px-8 rounded-md text-sm uppercase tracking-tight"
-            >
+              className="bg-brand-accent hover:bg-brand-accent-light text-white font-extrabold py-3 px-8 rounded-md text-sm uppercase tracking-tight">
               See Available Units
             </Button>
           </div>
@@ -68,17 +67,15 @@ export default function Home() {
           {/* Text */}
           <div className="w-full md:w-1/2 space-y-6">
             <h2 className="text-4xl md:text-5xl font-black tracking-tight text-white">
-              Free Moving Truck
+              Truck Rental For Life's Big Moves
             </h2>
             <p className="text-lg leading-relaxed text-stone-300 font-light max-w-xl">
-              Moving into your storage unit? Use our free Penske moving truck
-              for local moves. We want to make things as easy as we can for you.
-              Come check us out!
+              From cross-country moves to home DIY projects, Penske's dependable
+              trucks are ready to take you where you need to go.
             </p>
             <Button
               render={<Link href="/contact-us" />}
-              className="bg-brand-accent hover:bg-brand-accent-light text-white font-extrabold py-3 px-8 rounded-md text-sm uppercase tracking-tight"
-            >
+              className="bg-brand-accent hover:bg-brand-accent-light text-white font-extrabold py-3 px-8 rounded-md text-sm uppercase tracking-tight">
               Contact Us
             </Button>
           </div>
@@ -114,8 +111,7 @@ export default function Home() {
             </p>
             <Button
               render={<Link href="/coupons" />}
-              className="bg-brand-accent hover:bg-brand-accent-light text-white font-extrabold py-3 px-8 rounded-md text-sm uppercase tracking-tight"
-            >
+              className="bg-brand-accent hover:bg-brand-accent-light text-white font-extrabold py-3 px-8 rounded-md text-sm uppercase tracking-tight">
               View Coupon
             </Button>
           </div>
@@ -128,8 +124,7 @@ export default function Home() {
       {/* About Section */}
       <div
         className="relative bg-cover bg-center"
-        style={{ backgroundImage: "url('/images/IMG_1160-940x400.jpeg')" }}
-      >
+        style={{ backgroundImage: "url('/images/IMG_1160-940x400.jpeg')" }}>
         <div className="bg-brand-dark/85 py-20 px-6">
           <div className="max-w-3xl mx-auto text-center text-white">
             <h2 className="text-3xl font-bold mb-6">
@@ -145,14 +140,12 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Button
                 render={<a href="tel:307-789-5818" />}
-                className="bg-brand-accent hover:bg-brand-accent-light text-white"
-              >
+                className="bg-brand-accent hover:bg-brand-accent-light text-white">
                 Call (307) 789-5818
               </Button>
               <Button
                 render={<Link href="/contact-us" />}
-                className="border border-stone-400 bg-transparent text-white hover:bg-white/10"
-              >
+                className="border border-stone-400 bg-transparent text-white hover:bg-white/10">
                 Get Directions
               </Button>
             </div>
