@@ -28,8 +28,8 @@ export default function HeroSlider() {
             <span className="text-brand-accent">easy.</span>
           </h1>
           <p className="text-stone-700 text-sm leading-relaxed mb-4">
-            Moving in? Use one of our trucks. We want to make things as easy as
-            we can for you. Come check us out!
+            Moving in? We want to make things as easy as we can for you. Come
+            check us out!
           </p>
           <p className="flex items-center gap-2 text-base text-brand-accent mb-6 font-[family-name:var(--font-script)]">
             <Star className="h-4 w-4 fill-brand-accent text-brand-accent flex-shrink-0" />
@@ -77,8 +77,8 @@ export default function HeroSlider() {
               <span className="text-brand-accent">easy.</span>
             </h1>
             <p className="text-stone-700 text-lg md:text-xl leading-relaxed mb-6">
-              Moving in? Use one of our trucks. We want to make things as easy
-              as we can for you. Come check us out!
+              Moving in? We want to make things as easy as we can for you.
+              Come check us out!
             </p>
             <p className="flex items-center gap-2 text-xl md:text-2xl text-brand-accent mb-8 font-[family-name:var(--font-script)]">
               <Star className="h-5 w-5 fill-brand-accent text-brand-accent flex-shrink-0" />

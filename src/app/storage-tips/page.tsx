@@ -4,13 +4,13 @@ import { Card, CardContent } from "@/components/ui/card";
 export const metadata: Metadata = {
   title: "Storage Tips - Packing & Organization Guide",
   description:
-    "Expert packing and storage tips from Storage Stable in Evanston, WY. Free pallets, boxes, and moving truck available. Learn how to organize your storage unit.",
+    "Expert packing and storage tips from Storage Stable in Evanston, WY. Free pallets and boxes available. Learn how to organize your storage unit.",
   alternates: { canonical: "/storage-tips" },
 };
 
 const tips = [
   "You need to make sure that you can easily access the items you've stored in the mini storage unit when you want them. In all but the smallest units, try to create an aisle and leave enough room to be able to get round the back.",
-  "If you're storing heavy items or need boxes, we have boxes available and you can borrow our trolley to make your move easier. We offer free pallets to keep your items off the floor during our harsh Evanston winters. We also offer a free moving truck for local moves into your mini storage unit at Storage Stable.",
+  "If you're storing heavy items or need boxes, we have boxes available and you can borrow our trolley to make your move easier. We offer free pallets to keep your items off the floor during our harsh Evanston winters.",
   "Store your largest items first. If you're stacking your unit high with boxes, always make sure to put the heaviest boxes at the bottom to avoid damage.",
   "Stack boxes and similarly sized items together to save space.",
   "If you're storing metal objects avoid resting them against items susceptible to damage.",

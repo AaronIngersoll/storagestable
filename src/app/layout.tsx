@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     template: "%s | Storage Stable - Evanston, WY",
   },
   description:
-    "Storage Stable offers clean, secure self storage units in Evanston, Wyoming. Sizes from 3x5 to 10x30, outdoor RV parking, free moving truck, and 50% off first month. Call (307) 789-5818.",
+    "Storage Stable offers clean, secure self storage units in Evanston, Wyoming. Sizes from 3x5 to 10x30, gated RV and trailer parking, and 50% off first month. Call (307) 789-5818.",
   keywords: [
     "self storage Evanston WY",
     "storage units Evanston Wyoming",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     "RV parking Evanston WY",
     "cheap storage units Evanston",
     "storage stable",
-    "moving truck Evanston WY",
+    "trailer storage Evanston WY",
     "self storage near me",
     "storage units near Evanston Regional Hospital",
     "Uinta County storage",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     siteName: "Storage Stable",
     title: "Storage Stable - Self Storage & RV Parking in Evanston, WY",
     description:
-      "Clean, secure self storage units in Evanston, WY. Sizes 3x5 to 10x30, RV parking, free moving truck, 50% off first month. Call (307) 789-5818.",
+      "Clean, secure self storage units in Evanston, WY. Sizes 3x5 to 10x30, gated RV and trailer parking, 50% off first month. Call (307) 789-5818.",
     images: [
       {
         url: "/images/IMG_1128-1024x683.jpeg",
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Storage Stable - Self Storage & RV Parking in Evanston, WY",
     description:
-      "Clean, secure self storage in Evanston, WY. Free moving truck, 50% off first month. Call (307) 789-5818.",
+      "Clean, secure self storage in Evanston, WY. Gated RV and trailer parking, 50% off first month. Call (307) 789-5818.",
     images: ["/images/IMG_1128-1024x683.jpeg"],
   },
 };
@@ -66,7 +66,7 @@ const jsonLd = {
   "@type": "SelfStorage",
   name: "Storage Stable",
   description:
-    "Self storage units and RV parking in Evanston, Wyoming. Sizes from 3x5 to 10x30, free moving truck for local moves, and 50% off first month for new customers.",
+    "Self storage units and RV parking in Evanston, Wyoming. Sizes from 3x5 to 10x30, gated outdoor RV and trailer parking, and 50% off first month for new customers.",
   url: "https://www.storagestable.com",
   telephone: "+1-307-789-5818",
   email: "storagestable@gmail.com",
@@ -124,15 +124,6 @@ const jsonLd = {
           "@type": "Service",
           name: "RV & Vehicle Storage",
           description: "Outdoor RV and vehicle parking with gated access",
-        },
-      },
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Free Moving Truck",
-          description:
-            "Free Penske moving truck for local moves into your storage unit",
         },
       },
     ],

@@ -47,7 +47,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Section 2: Free Moving Truck */}
+      {/* Section 2: RV and Trailer Storage */}
       <section className="bg-brand-dark py-16 px-6 md:px-12 lg:px-24">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row-reverse items-center gap-12 lg:gap-20">
           {/* Image with decorative frame */}
@@ -55,11 +55,11 @@ export default function Home() {
             <div className="relative z-10 p-1">
               <div className="absolute inset-0 border-[3px] border-brand-accent pointer-events-none translate-x-2 -translate-y-2" />
               <Image
-                src="/images/Moving-Trucks-Available.jpg"
-                alt="Free Penske moving trucks available"
-                width={1024}
-                height={683}
-                className="relative z-10 w-full h-auto shadow-2xl"
+                src="/images/rv_parking.jpeg"
+                alt="Outdoor RV and vehicle parking at Storage Stable"
+                width={4032}
+                height={3024}
+                className="relative z-10 w-full h-auto aspect-[1024/683] object-cover shadow-2xl"
               />
             </div>
           </div>
@@ -67,11 +67,11 @@ export default function Home() {
           {/* Text */}
           <div className="w-full md:w-1/2 space-y-6">
             <h2 className="text-4xl md:text-5xl font-black tracking-tight text-white">
-              Truck Rental For Life's Big Moves
+              RV and Trailer Storage
             </h2>
             <p className="text-lg leading-relaxed text-stone-300 font-light max-w-xl">
-              From cross-country moves to home DIY projects, Penske's dependable
-              trucks are ready to take you where you need to go.
+              Gated outdoor parking for RVs, boats, and trailers. Room to
+              maneuver, easy in and out, and great pricing!
             </p>
             <Button
               render={<Link href="/contact-us" />}
@@ -134,8 +134,7 @@ export default function Home() {
               Storage Stable offers clean, secure self-storage units in
               Evanston, Wyoming. With on-site managers, well-lit driveways, and
               access 365 days a year, you can trust us with your belongings. We
-              also offer free pallets, boxes, and a free moving truck for local
-              moves.
+              also offer free pallets and boxes.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Button

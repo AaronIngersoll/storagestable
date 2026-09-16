@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { Card, CardContent } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Moving FAQ's - Tips, Timeline & Free Truck",
+  title: "Moving FAQ's - Tips & Moving Timeline",
   description:
-    "Moving tips and FAQ's from Storage Stable in Evanston, WY. Free Penske moving truck for local moves, packing timeline, and storage advice. Call (307) 789-5818.",
+    "Moving tips and FAQ's from Storage Stable in Evanston, WY. Packing timeline, moving checklist, and storage advice. Call (307) 789-5818.",
   alternates: { canonical: "/moving-faqs" },
 };
 
@@ -14,11 +14,6 @@ const movingFaqs = [
       "Why should I store with Storage Stable instead of using a friend's garage or attic?",
     answer:
       "Storage Stable offers 365-day access, clean well-lit driveways, on-site managers, and secure gated facilities. Friends can't give you the same peace of mind and access advantage. If you're selling your home, clearing out possessions makes it more attractive to buyers.",
-  },
-  {
-    question: "Does Storage Stable offer a free moving truck?",
-    answer:
-      "Yes! For local moves into your storage unit, you can use our free Penske moving truck at no charge. We also rent Penske trucks for longer moves. Call (307) 789-5818 to reserve.",
   },
   {
     question: "What should I do one month before my move?",
@@ -90,8 +85,7 @@ export default function MovingFaqs() {
               <div>
                 <h4 className="font-semibold text-brand-dark mb-1">One month to go</h4>
                 <p className="text-sm">
-                  Call around for mover quotes. Make sure they&apos;re properly insured. We rent
-                  Penske trucks or for local moves you can use our free moving truck. Order
+                  Call around for mover quotes. Make sure they&apos;re properly insured. Order
                   packing materials — we have all you need at great prices. Start packing
                   non-essential items. Mark your boxes clearly. Clear out the attic. Let everyone
                   know you&apos;re changing address. Arrange mail re-direction at least 2 weeks in
